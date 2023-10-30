@@ -11,6 +11,7 @@ import RenderWithMap from "./RenderWithMap/RenderWithMap";
 import DemoProps from "./DemoProps/DemoProps";
 import Ex_Phone from "./Ex_Phone/Ex_Phone";
 import Ex_Shoe from "./Ex_Shoe/Ex_Shoe";
+import DemoRedux from "./DemoRedux/DemoRedux";
 
 function App() {
   // jsx : html + js
@@ -26,7 +27,8 @@ function App() {
       {/* <RenderWithMap /> */}
       {/* <DemoProps /> */}
       {/* <Ex_Phone /> */}
-      <Ex_Shoe />
+      {/* <Ex_Shoe /> */}
+      <DemoRedux />
     </div>
   );
 }
