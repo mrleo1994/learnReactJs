@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { shoeArr } from "./data";
 
 export default class CartShoe extends Component {
   render() {
@@ -65,3 +67,10 @@ export default class CartShoe extends Component {
     );
   }
 }
+// let mapStateToProps = (state) => {
+//   return {
+//     cart: state.shoeReducer.cart,
+//     //root => initialState
+//   };
+// };
+// export default connect(mapStateToProps)(CartShoe);

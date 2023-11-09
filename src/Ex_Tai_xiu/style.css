@@ -1,0 +1,16 @@
+@font-face {
+    font-family: fontGame;
+    src: url(./font.ttf);
+}
+
+.game-container {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: bottom;
+    font-family: fontGame;
+}
+
+.game-container button {
+    font-size: 50px;
+}

@@ -12,6 +12,10 @@ export let shoeReducer = (state = initialState, action) => {
       state.detail = action.payload;
       return { ...state };
     }
+    // case "ADD_SHOE": {
+    //   state.cart = action.payload;
+    //   return { ...state };
+    // }
     default:
       return state;
   }
