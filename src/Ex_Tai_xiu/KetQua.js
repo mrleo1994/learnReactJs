@@ -6,6 +6,9 @@ class KetQua extends Component {
     return (
       <div className="display-4 text-center">
         <p>{this.props.luaChon}</p>
+        <p>{this.props.ketQua}</p>
+        <p>So luot choi: {this.props.soLuotChoi}</p>
+        <p>So luot thang: {this.props.soLuotThang}</p>
       </div>
     );
   }
@@ -13,7 +16,10 @@ class KetQua extends Component {
 
 let mapStateToProps = (state) => {
   return {
+    ketQua: state.ketQua,
     luaChon: state.luaChon,
+    soLuotChoi: state.soLuotChoi,
+    soLuotThang: state.soLuotThang,
   };
 };
 export default connect(mapStateToProps)(KetQua);

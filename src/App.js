@@ -14,6 +14,11 @@ import Ex_Shoe from "./Ex_Shoe/Ex_Shoe";
 import DemoRedux from "./DemoRedux/DemoRedux";
 import Ex_Shoe_Redux from "./Ex_Shoe_Redux/Ex_Shoe_Redux";
 import Ex_Tai_xiu from "./Ex_Tai_xiu/Ex_Tai_xiu";
+import DemoLifeCycle from "./DemoLifeCycle/DemoLifeCycle";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./page/HomePage";
+import LoginPage from "./page/LoginPage";
+import Header from "./page/Header";
 
 function App() {
   // jsx : html + js
@@ -32,7 +37,18 @@ function App() {
       {/* <Ex_Shoe /> */}
       {/* <DemoRedux /> */}
       {/* <Ex_Shoe_Redux /> */}
-      <Ex_Tai_xiu />
+      {/* <Ex_Tai_xiu /> */}
+      {/* <DemoLifeCycle /> */}
+
+      {/* --- router - phan trang --- */}
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          {/** liet ke cac page */}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
